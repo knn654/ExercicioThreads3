@@ -1,6 +1,7 @@
 
 public class Main {
 	static int i;
+	static int pos = 0;
 	static Thread Sapo = new Thread() {
 		public void run() {
 			do {
@@ -12,7 +13,8 @@ public class Main {
 					System.out.println("O sapo 1 pulou " + salto + " metro(s).");
 				}
 			} while (i<=1000);
-			System.out.println("Sapo 1 terminou a corrida");
+			pos = pos + 1;
+			System.out.println("Sapo 1 terminou a corrida na " + pos + "ª posição");
 		}
 	};
 	static Thread Sapo2 = new Thread() {
@@ -26,7 +28,8 @@ public class Main {
 					System.out.println("O sapo 2 pulou " + salto + " metro(s).");
 				}
 			} while (i<=1000);
-			System.out.println("Sapo 2 terminou a corrida");
+			pos = pos + 1;
+			System.out.println("Sapo 2 terminou a corrida na " + pos + "ª posição");
 		}
 	};
 	static Thread Sapo3 = new Thread() {
@@ -40,7 +43,8 @@ public class Main {
 					System.out.println("O sapo 3 pulou " + salto + " metro(s).");
 				}
 			} while (i<=1000);
-			System.out.println("Sapo 3 terminou a corrida");
+			pos = pos + 1;
+			System.out.println("Sapo 3 terminou a corrida na " + pos + "ª posição");
 		}
 	};
 	static Thread Sapo4 = new Thread() {
@@ -54,7 +58,8 @@ public class Main {
 					System.out.println("O sapo 4 pulou " + salto + " metro(s).");
 				}
 			} while (i<=1000);
-			System.out.println("Sapo 4 terminou a corrida");
+			pos = pos + 1;
+			System.out.println("Sapo 4 terminou a corrida na " + pos + "ª posição");
 		}
 	};
 	static Thread Sapo5 = new Thread() {
@@ -68,7 +73,9 @@ public class Main {
 					System.out.println("O sapo 5 pulou " + salto + " metro(s).");
 				}
 			} while (i<=1000);
-			System.out.println("Sapo 5 terminou a corrida");
+			pos = pos + 1;
+			System.out.println("Sapo 5 terminou a corrida na " + pos + "ª posição");
+			
 		}
 	};
 	public static void main(String[] args) {
